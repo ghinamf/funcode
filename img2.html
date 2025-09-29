@@ -73,6 +73,8 @@
     };
 
     // Pastikan musik langsung jalan setelah ada interaksi user
+  const bgMusic = document.getElementById("bg-music");
+
   document.body.addEventListener("click", () => {
     bgMusic.play();
   }, { once: true });

@@ -27,11 +27,13 @@
     Browser kamu tidak mendukung audio tag.
   </audio>
 
-  <script>
-   document.body.addEventListener("click", () => {
+ <script>
+  const bgMusic = document.getElementById("bg-music");
+
+  document.body.addEventListener("click", () => {
     bgMusic.play();
   }, { once: true });
-  </script>
+</script>
 
 </body>
 </html>

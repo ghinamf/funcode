@@ -1,0 +1,85 @@
+/* img3.css */
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #000;
+  font-family: 'Poppins', sans-serif;
+  color: white;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.img3-container {
+  text-align: center;
+  max-width: 800px; /* biar konten tidak terlalu melebar */
+  padding: 20px;
+  margin: 0 auto;
+}
+
+.image-card {
+  width: 200px;
+  max-width: 250px;   /* default ukuran */
+  border-radius: 20px;
+  overflow: hidden; /* biar gambar ikut rounded */
+  margin: 0 auto 20px auto; /* ada jarak ke teks */
+  box-shadow: 0 4px 10px rgba(0,0,0,0.5);
+
+  /* Tambahan animasi saat hover */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.image-card img {
+  width: 100%;
+  height: auto;
+  object-fit: cover; /* gambar akan menutupi seluruh card tanpa distorsi */
+  display: block;
+  transition: transform 0.3s ease; /* agar gambar juga smooth saat di-hover */
+}
+
+/* Efek hover */
+.image-card:hover {
+  transform: scale(1.05); /* sedikit membesar */
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.6); /* bayangan lebih tegas */
+}
+
+.image-card:hover img {
+  transform: scale(1.1); /* zoom-in gambar saat hover */
+}
+
+.caption {
+  margin-top: 15px;
+  font-size: 1rem;
+  line-height: 1.6;
+  text-align: center;
+}
+
+.arrow {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  font-size: 2rem;
+  text-decoration: none;
+  color: white;
+  z-index: 1000;
+}
+
+/* Responsiveness */
+@media (max-width: 768px) {
+  .image-card {
+    max-width: 200px; /* kecilin gambar di tablet */
+  }
+  .caption {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .image-card {
+    max-width: 160px; /* makin kecil di HP */
+  }
+  .caption {
+    font-size: 0.85rem;
+  }
+}

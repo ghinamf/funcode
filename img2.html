@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nayla Image 2</title>
+  <link rel="stylesheet" href="img2.css" />
+</head>
+<body>
+  <div class="img2-container">
+    
+    <!-- Bagian gambar -->
+    <div class="image-card">
+      <img src="images/img2.jpg" alt="Nayla Image 2" />
+    </div>
+    
+    <!-- Bagian teks -->
+    <div class="text-content">
+      <p class="caption">HEPIBESDAY GIMBRUTOOOOOO FINALLY THIS IS THE VISUAL OF U CURRENTLY.😎💕</p>
+      <p class="caption">Hmm bilang apa aja ya enaknya di sini... Jujur kaka bingung sebenarnyaa awgwwgwg.</p>
+      <p class="caption">Ohhh ini aja deh, permohonan maaf dulu karena udah delay berapa hari bahkan minggu yakk.
+        Jadi sebenarnya  kaka tuh udah bikin ini pas tau nilai IT ka nay 100 udh langsung kaka bikin conceptnya
+        terus bikin draftnya, tapi karena ada beberapa hal yg bikin kaka jadi delay, yaa jadi soo sorry yaaw.
+      </p>
+      <p class="caption">Tapi alhamdulillah akhirnya jadi juga deh, walaupun telat wkwkwk. Semoga ka nay sukaa yaa
+        sama surprise ini, karena ini beneran kaka buat dengan sepenuh hati kaka, semoga ka nay sukaa yaa. Aamiin.
+      </p>
+      <p class="caption">Ohiya satu lagi, semoga di umur ka nay yg ke 13 ini, ka nay bisa jadi pribadi yg lebih baik lagi
+        dari sebelumnya, bisa lebih dewasa, lebih bijak, lebih sholehah, lebih soft spoken and soft expressions,
+        lebih sayang sama keluarga, lebih sayang sama temen2, lebih sayang sama kaka, lebih sayang sama diri sendiri,
+        lebih semangat ngejalanin hidup, lebih semangat belajar, lebih semangat ibadahnya, pokoknya semoga di umur
+        ka nay yg ke 13 ini bisa jadi pribadi yg jauh lebih baik lagi deh pokoknyaa. Aamiin Yaa Rabbal Alamin.
+      </p>
+      <p class="caption">ONCE AGAIN....HEPI BELATED BIRTHDAY BRUTIIIII😘💕🎂😉🥰🤩👑</p>
+      <p class="caption">DONT FORGET TO ALWAYS ENJOY AND HAVE FUN IN YOUR YOUNG AGE 😘🤩😎</p>
+    </div>
+
+    <a href="pg1.html" class="arrow">➡️</a>
+  </div>
+
+  <audio id="bg-music" autoplay loop>
+    <source src="music/audio.mp3" type="audio/mpeg" />
+    Browser kamu tidak mendukung audio tag.
+  </audio>
+
+
+ <!-- Library confetti -->
+  <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.3/dist/confetti.browser.min.js"></script>
+  <script>
+    // Jalankan confetti saat halaman dibuka
+    window.onload = () => {
+      confetti({
+        particleCount: 150,   // jumlah confetti
+        spread: 100,          // sebarannya
+        origin: { y: 0.6 }    // muncul dari tengah layar
+      });
+
+      // Bisa juga looping biar lebih rame (optional)
+      setTimeout(() => {
+        confetti({
+          particleCount: 200,
+          angle: 60,
+          spread: 100,
+          origin: { x: 0 }
+        });
+        confetti({
+          particleCount: 200,
+          angle: 120,
+          spread: 100,
+          origin: { x: 1 }
+        });
+      }, 500);
+    };
+
+    // Pastikan musik langsung jalan setelah ada interaksi user
+  document.body.addEventListener("click", () => {
+    bgMusic.play();
+  }, { once: true });
+  </script>
+</body>
+</html>
+

@@ -1,0 +1,37 @@
+
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Birthday Surprise</title>
+  <link rel="stylesheet" href="pg1.css" />
+</head>
+<body>
+  <div class="container">
+    <div class="form-box">
+      <label for="name">Type your name here please</label>
+      <input type="text" id="name" placeholder="Your name" />
+
+      <label for="dob">Click your date of birth here please</label>
+      <input type="date" id="dob" />
+
+      <button id="enter-btn">ENTER</button>
+    </div>
+  </div>
+
+  <script>
+    document.getElementById("enter-btn").addEventListener("click", function () {
+      const dob = document.getElementById("dob").value;
+      const targetDate = "2025-09-18"; // Format YYYY-MM-DD
+
+      if (dob === targetDate) {
+        window.location.href = "pg2.html";
+      } else {
+        alert("Oops! Tanggal lahir tidak cocok ");
+      }
+    });
+  </script>
+</body>
+</html>
